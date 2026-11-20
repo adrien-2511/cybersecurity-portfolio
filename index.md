@@ -28,7 +28,7 @@ Outside the courses I run a small home lab with a hypervisor and a few virtual m
 | Packet Tracer and GNS3 | Working knowledge | [OSPF network](projects/ospf-dhcp-network/) |
 | Git and GitHub | Beginner | This repository |
 | Python and Bash scripting | Beginner | Not yet in a project |
-| SIEM (Splunk, Wazuh) | Beginner, not practiced yet | Planned for 2027 |
+| SIEM (Splunk, Wazuh) | Beginner, not practiced yet | Not yet in a project |
 
 ## Certifications and training
 
@@ -37,7 +37,7 @@ I don't have a certification yet. Everything below is in progress, with a target
 - Cisco Networking Academy, CyberOps Associate (course WQE7001) : in progress, target January 2027.
 - Cisco Networking Academy, CCNA Introduction to Networks, Switching Routing and Wireless Essentials, Enterprise Networking Security and Automation (course WQE7007) : in progress, target January 2027.
 - ISC2 Certified in Cybersecurity (CC) : planned, target February 2027.
-- TryHackMe SOC Level 1 path : planned, December 2026 to February 2027.
+- Cisco CCNA 200-301 exam : planned, target June 2027.
 
 When I get a badge I will add the Credly link here.
 
@@ -56,22 +56,21 @@ The second topic was the routing exercise with my number XY = 25. I had to build
 
 Something went wrong in the lab. My Kali VM had two network cards : one in host-only mode for the lab and one in shared mode (NAT) for the updates. At first I only put the NAT card down inside Kali before the tests. When I checked again I saw the problem : one command in Kali is enough to put the card up again. Then the scans could leave the lab. To fix it, I removed the second card in the UTM settings, so Kali has only the host-only card. Then I tested the worst case. I forced a default route through the Mac on both VMs, and the pings to 8.8.8.8 and to my home router still failed. Now the isolation does not depend on a setting inside the VM.
 
-
-The topic I still find hard is everything that needs x86 VMs on Apple Silicon. Security Onion and the CyberOps Workstation are slow in emulation, and GNS3 with real IOS images is not easy to install on a Mac. I am also still a beginner with SIEM tools, which are used in every SOC job posting I read.
+The topic I still find hard is everything that needs x86 VMs on Apple Silicon. Security Onion and the CyberOps Workstation are slow in emulation, and GNS3 with real IOS images is not easy to install on a Mac. I am also still a beginner with SIEM tools, which are in many security job postings I read.
 
 My improvement goal : pass the nine CyberOps group exams on NetAcad before 4 January 2027, with at least 80 % in each one. I will measure it with the scores in the NetAcad gradebook. I will plan two exams per week during the mid-semester break, from 30 November to 6 December.
 
 ## Career objective
 
-My target role for the start of my career is SOC analyst, level 1. I like this role because it mixes networks, systems and investigation, and many postings accept junior profiles. In the longer term I want to become a security architect for infrastructure, because I like to design networks that are secure from the start.
+My target role is network and infrastructure engineer with a security focus, and later security architect for infrastructure. I like to design networks and systems that are secure from the start, more than to watch alerts.
+
+In the Pathway assignment of this course I chose SOC analyst as the easiest entry door. After this semester I changed my mind. The labs I liked the most were the routing exercise and the isolation of my lab, not the log analysis. A company also needs infrastructure people who understand the attacks, and this is where I want to be.
 
 My next steps :
 
-1. Finish the TryHackMe SOC Level 1 path and pass the ISC2 CC exam before the end of February 2027.
-2. Install Wazuh in my own lab and write five detection rules, between March and May 2027. I will publish them in this portfolio.
-3. Find a work-study position in a SOC in France from September 2027, then prepare CompTIA Security+ for January 2028.
-
-This plan follows the learning plan I wrote for the Pathway assignment of this course.
+1. Pass the Cisco CCNA 200-301 exam before June 2027, after the CCNA courses of WQE7007.
+2. Add a firewall and VLAN segmentation to my home lab between February and May 2027, and publish the design and the tests in this portfolio.
+3. After my degree in 2027, find a junior network or infrastructure position, or a specialised master in infrastructure architecture, then prepare CompTIA Security+.
 
 ## Contact
 

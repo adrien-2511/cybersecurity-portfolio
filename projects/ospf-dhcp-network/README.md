@@ -46,10 +46,21 @@ line vty 0 4
 
 ## Results
 
-- OSPF and OSPFv3 neighbours in FULL state in area 0 and area 25.
-- The PCs get an IPv4 and an IPv6 address from Rtr2 and Rtr3 (checked with show ip dhcp binding).
-- Ping in IPv4 and IPv6 from PC1 (VLAN 10, behind Rtr2) to PC3 (behind Rtr3) works.
-- SSH to Rtr1 on 10.10.100.25 works, Telnet is refused.
+OSPF and OSPFv3 : on Rtr1 the three neighbours are in FULL state, in area 0 (Rtr4) and in area 25 (Rtr2 and Rtr3).
+
+![OSPF and OSPFv3 neighbours on Rtr1](evidence/02-rtr1-ospf-neighbors.png)
+
+DHCP : the PCs of VLAN 10 and VLAN 20 got their IPv4 address from Rtr2. Packet Tracer does not have the show ipv6 dhcp binding command, so this capture shows only IPv4.
+
+![DHCP bindings on Rtr2](evidence/03-rtr2-dhcp-binding.png)
+
+Routing : ping in IPv4 and IPv6 from PC1 (VLAN 10, behind Rtr2) to PC3 (behind Rtr3) works, 3 out of 3 each time. The packets cross the two areas.
+
+![Ping IPv4 and IPv6 from PC1 to PC3](evidence/04-pc1-ping-ipv4-ipv6.png)
+
+Remote access : SSH version 2 to Rtr1 on 10.10.100.25 works with the local user. Telnet opens the TCP port but Rtr1 closes the session at once, because the vty lines accept only SSH.
+
+![SSH accepted and Telnet refused on Rtr1](evidence/05-pc1-ssh-ok-telnet-refused.png)
 
 ## What I would do differently
 
