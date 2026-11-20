@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Isolated virtual lab and Nmap service scan
+permalink: /projects/virtual-lab-setup/
 ---
 
 # Isolated virtual lab and Nmap service scan

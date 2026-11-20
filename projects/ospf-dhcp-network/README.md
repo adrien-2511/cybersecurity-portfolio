@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Multi-area OSPF network with DHCP and SSH
+permalink: /projects/ospf-dhcp-network/
 ---
 
 # Multi-area OSPF network with DHCP and SSH
