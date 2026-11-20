@@ -2,5 +2,3 @@ title: Adrien Turck - Cybersecurity Portfolio
 description: Labs, projects and learning journey in cyber security
 theme: minima
 baseurl: "/cybersecurity-portfolio"
-exclude:
-  - README.md
