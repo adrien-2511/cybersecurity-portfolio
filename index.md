@@ -77,4 +77,6 @@ My next steps :
 - GitHub : [adrien-2511](https://github.com/adrien-2511)
 - LinkedIn : [linkedin.com/in/adrien-turck](https://www.linkedin.com/in/adrien-turck/)
 
+My LinkedIn profile links back to this portfolio : the address of the site is in the Contact info of the profile, under Website.
+
 I don't publish my phone number or my address. You can contact me with a message on LinkedIn.
