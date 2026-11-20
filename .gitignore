@@ -1,0 +1,18 @@
+# macOS and editor files
+.DS_Store
+*.swp
+# Packet Tracer and VM files (large or contain lab passwords)
+*.pkt
+*.pka
+*.ova
+*.qcow2
+*.utm
+# Secrets and local notes
+.env
+*.key
+*.pem
+secrets/
+notes-local/
+# Jekyll build
+_site/
+.jekyll-cache/
